@@ -27,4 +27,8 @@ public class SpringCloudApplication {
 		return () -> new Book(101, "Core Java");
 	}
 	
+	@Bean
+	public Consumer<String> printMessage() {
+		return (input) -> System.out.println(input);
+	}
 }

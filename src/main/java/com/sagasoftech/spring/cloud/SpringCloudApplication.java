@@ -7,10 +7,12 @@ import java.util.function.Supplier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.sagasoftech.spring.cloud.model.Book;
 
 @SpringBootApplication
+@ComponentScan
 public class SpringCloudApplication {
 
 	public static void main(String[] args) {
